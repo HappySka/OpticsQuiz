@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Optics Quiz</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="question_1">1. A plano-concave lens ...</string>
+    <string name="answer_1_1">has no spherical aberrations.</string>
+    <string name="answer_1_2">is a diverging lens.</string>
+    <string name="answer_1_3">has no chromatic aberrations.</string>
+    <string name="answer_1_4">has only one principal plane.</string>
+
+    <string name="question_2">2. The entrance pupil is ...</string>
+    <string name="answer_2_1">the image of the exit pupil.</string>
+    <string name="answer_2_2">identical with the exit pupil.</string>
+    <string name="answer_2_3">the image of the aperture from the image side.</string>
+    <string name="answer_2_4">the image of the aperture from the object side.</string>
+
+    <string name="question_3">3. How many principal planes exist in a paraxial imaging optical system?</string>
+    <string name="please_enter_your_anwser">Please enter your anwser</string>
+
+    <string name="question_4">4. Which of these refractive indices is/are NOT possible?</string>
+    <string name="answer_4_1">1.5</string>
+    <string name="answer_4_2">1</string>
+    <string name="answer_4_3">0.8</string>
+    <string name="answer_4_4">0</string>
+    <string name="answer_4_5">-0.3</string>
+
+    <string name="question_5">5. Total reflexion is ...</string>
+    <string name="answer_5_1">used in optical fibres.</string>
+    <string name="answer_5_2">independent from the angle of incidence.</string>
+    <string name="answer_5_3">independent from the refractive indices.</string>
+    <string name="answer_5_4">a theoretical model without applications.</string>
+
+    <string name="question_6">6. Antireflective coatings ...</string>
+    <string name="answer_6_1">do not absorb any light.</string>
+    <string name="answer_6_2">work for all wavelengths at the same time.</string>
+    <string name="answer_6_3">are based on interference.</string>
+    <string name="answer_6_4">are only used for laser optics.</string>
+
+    <string name="you_have">You have</string>
+    <string name="maximum_points">/6 points!</string>
+    <string name="awesome">Awesome!</string>
+    <string name="not_bad">Not bad! Try again!</string>
+    <string name="you_can_do_better">I am sure you can do better!</string>
+    <string name="two">Two</string>
+    <string name="two_number">2</string>
+</resources>
