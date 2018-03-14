@@ -20,15 +20,15 @@
     <style name="radio_button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingLeft">@dimen/radio_padding_left</item>
         <item name="android:textSize">@dimen/body_text_size</item>
     </style>
 
     <style name="line">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">2dp</item>
-        <item name="android:layout_marginBottom">25dp</item>
-        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:layout_marginBottom">@dimen/line_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/line_margin_top</item>
         <item name="android:background">@color/colorPrimaryDark</item>
     </style>
 
@@ -41,7 +41,7 @@
     <style name="checkbox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingLeft">@dimen/checkbox_padding_left</item>
         <item name="android:textSize">@dimen/body_text_size</item>
     </style>
 

@@ -37,7 +37,7 @@
     <string name="answer_6_3">are based on interference.</string>
     <string name="answer_6_4">are only used for laser optics.</string>
 
-    <string name="you_have">You have</string>
+    <string name="you_have">"You have "</string>
     <string name="maximum_points">/6 points!</string>
     <string name="awesome">Awesome!</string>
     <string name="not_bad">Not bad! Try again!</string>

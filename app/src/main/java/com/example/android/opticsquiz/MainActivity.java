@@ -9,15 +9,31 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
+
+    @BindView(R.id.question_1_correct_answer) RadioButton correct1;
+    @BindView(R.id.question_2_correct_answer) RadioButton correct2;
+    @BindView(R.id.question_5_correct_answer) RadioButton correct5;
+    @BindView(R.id.question_6_correct_answer) RadioButton correct6;
+
+    @BindView(R.id.edit_text_question_3)EditText answer3;
+
+    @BindView(R.id.question_4_wrong_answer_1) CheckBox wrong4_1;
+    @BindView(R.id.question_4_wrong_answer_2) CheckBox wrong4_2;
+    @BindView(R.id.question_4_wrong_answer_3) CheckBox wrong4_3;
+    @BindView(R.id.question_4_correct_answer_1) CheckBox correct4_1;
+    @BindView(R.id.question_4_correct_answer_2) CheckBox correct4_2;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
     }
 
 
@@ -26,18 +42,19 @@ public class MainActivity extends AppCompatActivity {
      *
      */
     public void submitQuiz(View view){
-        int gesamt = evaluateQuestion1() + evaluateQuestion2() + evaluateQuestion3() + evaluateQuestion4()
+        int total = evaluateQuestion1() + evaluateQuestion2() + evaluateQuestion3() + evaluateQuestion4()
                 + evaluateQuestion5() + evaluateQuestion6();
         String message = "";
-        message += getString(R.string.you_have) + gesamt + getString(R.string.maximum_points) + "\n";
-        if (gesamt == 6) {
+        message += getString(R.string.you_have) + total + getString(R.string.maximum_points) + "\n";
+        if (total == 6) {
             message += getString(R.string.awesome);
-        } else if (gesamt > 3) {
+        } else if (total > 3) {
             message += getString(R.string.not_bad);
         } else {
             message+= getString(R.string.you_can_do_better);
         }
 
+        // creates toast with the above crated result message and displays it
         Toast toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
         TextView text = toast.getView().findViewById(android.R.id.message);
         if( text != null) text.setGravity(Gravity.CENTER);
