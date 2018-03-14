@@ -67,26 +67,24 @@ public class MainActivity extends AppCompatActivity {
      **/
 
     private int evaluateQuestion1() {
-        RadioButton correct = findViewById(R.id.question_1_correct_answer);
-        if (correct.isChecked()){
+        if (correct1.isChecked()){
             return 1;
         }
         return 0;
     }
 
     private int evaluateQuestion2() {
-        RadioButton correct = findViewById(R.id.question_2_correct_answer);
-        if (correct.isChecked()){
+        if (correct2.isChecked()){
             return 1;
         }
         return 0;
     }
 
     private int evaluateQuestion3() {
-        EditText answer = findViewById(R.id.edit_text_question_3);
-        String answerString = answer.getText().toString();
+        String answerString = answer3.getText().toString();
         String correct1 = getString(R.string.two);
         String correct2 = getString(R.string.two_number);
+        // compare case insensitive and also allow numerical answer
         if (answerString.equalsIgnoreCase(correct1) || answerString.equals(correct2)) {
             return 1;
         }
@@ -94,14 +92,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int evaluateQuestion4() {
-        CheckBox wrongAnswer1 = findViewById(R.id.question_4_wrong_answer_1);
-        CheckBox wrongAnswer2 = findViewById(R.id.question_4_wrong_answer_2);
-        CheckBox wrongAnswer3 = findViewById(R.id.question_4_wrong_answer_3);
-        CheckBox correctAnswer1 = findViewById(R.id.question_4_correct_answer_1);
-        CheckBox correctAnswer2 = findViewById(R.id.question_4_correct_answer_2);
-
         // make sure all right answers are checked and all wrong answers are unchecked
-        boolean correct = (!wrongAnswer1.isChecked() && !wrongAnswer2.isChecked() && !wrongAnswer3.isChecked() && correctAnswer1.isChecked() && correctAnswer2.isChecked());
+        boolean correct = (!wrong4_1.isChecked() && !wrong4_2.isChecked() && !wrong4_3.isChecked() && correct4_1.isChecked() && correct4_2.isChecked());
 
         if (correct)
             return 1;
@@ -109,16 +101,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int evaluateQuestion5() {
-        RadioButton correct = findViewById(R.id.question_5_correct_answer);
-        if (correct.isChecked()){
+        if (correct5.isChecked()){
             return 1;
         }
         return 0;
     }
 
     private int evaluateQuestion6() {
-        RadioButton correct = findViewById(R.id.question_6_correct_answer);
-        if (correct.isChecked()){
+        if (correct6.isChecked()){
             return 1;
         }
         return 0;
